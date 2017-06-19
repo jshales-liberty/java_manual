@@ -19,7 +19,31 @@
 ## Enums
 - An enum allows you to define a set of related constants, such as days of the week, or specializations for physicians, so that you can limit the values used in your program to that specific set.
 ## anonymous inner classes, lambdas
-- definition
+- An anonymous inner class is used when you only need to use a class once, frequently occurring when working with GUIs - the class is implemented without giving it a name.  A lambda is a way to express an anonymous inner class with only one method.
+This is an example of a lambda from oracle.com:
+```
+13 public class ListenerTest {
+14   public static void main(String[] args) {
+15         
+16     JButton testButton = new JButton("Test Button");
+17     testButton.addActionListener(new ActionListener(){
+18     @Override public void actionPerformed(ActionEvent ae){
+19         System.out.println("Click Detected by Anon Class");
+20       }
+21     });
+22     
+23     testButton.addActionListener(e -> System.out.println("Click Detected by Lambda Listener"));
+24     
+25     // Swing stuff
+26     JFrame frame = new JFrame("Listener Test");
+27     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+28     frame.add(testButton, BorderLayout.CENTER);
+29     frame.pack();
+30     frame.setVisible(true);
+31     
+32   }
+33 }
+```
 ## important classes of the standard library
 - From stackoverflow, these are some of the important sets of classes:
     - java.lang:  all the basic classes (e.g. String, Integer)
