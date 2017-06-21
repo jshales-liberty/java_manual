@@ -1,4 +1,4 @@
-##inheritance
+## Inheritance
 
 - In the Java language, classes can be derived from other classes, thereby inheriting fields and methods from those classes which have already been written and tested. The class from which the subclass is derived is called a superclass or parent class. The "extends" keyword is what you use to tell java that one class inhertits from another.
 
@@ -19,7 +19,7 @@ class Circle extends Shape {
 }    
 ```
 
-##super
+## Super
 
 - Super is a keyword. It is used inside a sub-class method definition to call a method defined in the super class. Private methods of the super-class cannot be called. Only public and protected methods can be called by the super keyword. It is also used by class constructors to invoke constructors of its parent class.
 
@@ -44,7 +44,7 @@ class Subclass extends Parentclass
 }
 ```
 
-##overloading
+## Overloading
 
 - Method Overloading is a feature that allows a class to have two or more methods having same name, if their argument lists are different. The argument lists could differ in:
   - Number of parameters
@@ -57,7 +57,7 @@ public class Calculation {
    void sum(int a,int b,int c){System.out.println(a+b+c);}
 ```
 
-##overriding
+## Overriding
 
 - The ability of a subclass to override a method allows a class to inherit behavior from a super or parent class and then to modify behavior as needed for the subclass. The overriding method in the subclass has the same name, number and type of parameters, and return type as the method that it overrides from the parent class.
 
@@ -79,7 +79,7 @@ class Boy extends Human{
 }
 ```
 
-##packages
+## Packages
 
 - A package is a namespace that organizes a set of related classes and interfaces. Conceptually you can think of packages as being similar to different folders on your computer.  
 - For example if a package name is college.staff.cse, then there are three directories, college, staff and cse such that cse is present in staff and staff is present college.
@@ -90,7 +90,7 @@ import java.util.*;
 // util is a subpackage created inside java package
 ```
 
-##interfaces
+## Interfaces
 
 - An interface is a reference type in Java. It is similar to class except a java interface can only contain method signatures and fields, but not implementation details.  A class implements an interface, thereby inheriting the abstract methods of the interface. Along with abstract methods, an interface may also contain constants, default methods, static methods, and nested types.
 
@@ -116,7 +116,7 @@ class ACMEBicycle implements Bicycle {
 }
 ```
 
-##casting
+## Casting
 
 - Taking an Object of one particular type and turning it into another Object type.
 The cast can be to its own class type or to one of its subclass or superclass types or interfaces. There are compile-time rules and runtime rules for casting in java.
@@ -129,7 +129,7 @@ if (obj instanceof Integer) {
 }
 ```
 
-##instanceof operator
+## Instanceof operator
 
 - The java instanceof operator is used to test whether the object is an instance of the specified type (class or subclass or interface). The instanceof in java is also known as type comparison operator because it compares the instance with type. It returns either true or false.
 
