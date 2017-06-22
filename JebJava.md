@@ -1,4 +1,4 @@
-## Classes / Instances
+# Classes / Instances
 -- A class is a blueprint or a template for creating different objects which
 defines its properties and behaviors. Java class objects exhibit the properties
 and behaviors defined by its class. A class can contain fields and methods to
@@ -28,7 +28,7 @@ public class Dog {
 }
 ```
 
-## Instances
+# Instances
 -- The creation of an instance is called instantiation. In class-based programming, objects are created from classes by subroutines called constructors, and destroyed by destructors. An object is an instance of a class, and may be called a class instance or class object; instantiation is then also known as construction.
 
 ## Instance Fields or Instance variables −
@@ -84,12 +84,12 @@ class GFG {
 }
 ```
 
-## Static Fields or Class Variables
+# Static Fields or Class Variables
 -- Variables declared within a class,outside any method, with the static keyword.
 -- A class can have any number of methods to access the value of various kinds of methods.
 -- Note: Static variables and their values (primitives or references) defined in the class are stored in PermGen space of memory.
 
-## Static Methods
+# Static Methods
 -- Static methods are the methods in Java that can be called without creating an object of class. They are referenced by the class name itself or reference to the Object of that class.
 
 -- When to use static methods ??
@@ -117,7 +117,7 @@ https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html
 They are designed with aim to be shared among all Objects created from the same class.
 Static methods can not be overridden. But can be overloaded since they are resolved using static binding by compiler at compile time.
 
-## This
+# This
 -- 'this' is a keyword in Java which is used as a reference to the object of the current class, with in an instance method or a constructor. Using this you can refer the members of a class such as constructors, variables and methods.
 
 -- Note − The keyword this is used only within instance methods or constructors
@@ -180,7 +180,7 @@ Static methods can not be overridden. But can be overloaded since they are resol
 }
 ```
 
-## Constructors
+# Constructors
 Every class has a constructor. If we do not explicitly write a constructor for a class,
 the Java compiler builds a default constructor for that class. Each time a new object is
 created, at least one constructor will be invoked. The main rule of constructors is that
@@ -200,7 +200,7 @@ public class Puppy {
 
 ## Java also supports Singleton Classes where you would be able to create only one instance of a class.
 
-## Creating an Object
+# Creating an Object
 A class provides the blueprints for objects. So basically, an object is created from a class.
 In Java, the new keyword is used to create new objects (New instance of an object).
 
