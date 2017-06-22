@@ -52,12 +52,12 @@ defines its properties and behaviors. Java class objects exhibit the properties
 and behaviors defined by its class. A class can contain fields and methods to
 describe the behavior of an object.
 
-# The following is an example of a class.
+### The following is an example of a class.
 - Local variables − Variables defined inside methods, constructors or
 blocks are called local variables. The variable will be declared and initialized
 within the method and the variable will be destroyed when the method has completed.
 
-# In the below example, barking(), hungry() and sleeping() are methods.
+### In the below example, barking(), hungry() and sleeping() are methods.
 
 ```
 public class Dog {
@@ -141,12 +141,10 @@ class GFG {
 - Static methods are the methods in Java that can be called without creating an object of class. They are referenced by the class name itself or reference to the Object of that class.
 
 - When to use static methods ??
-
 - When you have code that can be shared across all instances of the same class, put that portion of code into static method.They are basically used to access static field(s) of the class.
+- https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html
 
-https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html
-
-# Example of Static Methods
+### Example of Static Methods
 ```public static void geek(String name)
 {
  // code to be executed....
@@ -156,10 +154,10 @@ https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html
 // Return type can be int, float, String or user defined data type.
 ```
 
-# Memory Allocation (Static Methods):
+### Memory Allocation (Static Methods):
 - Static Methods are stored in Permanent Generation space of heap as they are associated to the class in which they reside not to the objects of that class. But their local variables and the passed argument(s) to them are stored in the stack. Since they belong to the class so they can be called to without creating the object of the class.
 
-# Important Points:
+### Important Points:
 
 - Static method(s) are associated to the class in which they reside i.e. they can be called even without creating an instance of the class i.e ClassName.methodName(args).
 They are designed with aim to be shared among all Objects created from the same class.
@@ -174,7 +172,7 @@ Static methods can not be overridden. But can be overloaded since they are resol
  from local variables if they have same names,
  within a constructor or a method.
 
-# Example of This Keyword:
+### Example of This Keyword:
  - Here is an example that uses this keyword to access the members of a class
 
  ```
@@ -234,7 +232,7 @@ the Java compiler builds a default constructor for that class. Each time a new o
 created, at least one constructor will be invoked. The main rule of constructors is that
 they should have the same name as the class. A class can have more than one constructor.
 
-# The following is an example of a constructor
+### The following is an example of a constructor
 ```
 public class Puppy {
    public Puppy() {
@@ -246,13 +244,13 @@ public class Puppy {
 }
 ```
 
-## Java also supports Singleton Classes where you would be able to create only one instance of a class.
+- Java also supports Singleton Classes where you would be able to create only one instance of a class.
 
-# Creating an Object
+### Creating an Object
 A class provides the blueprints for objects. So basically, an object is created from a class.
 In Java, the new keyword is used to create new objects (New instance of an object).
 
-# There are three steps when creating an object from a class −
+### There are three steps when creating an object from a class −
 
 - Declaration − A variable declaration with a variable name with an object type.
 
@@ -261,7 +259,7 @@ In Java, the new keyword is used to create new objects (New instance of an objec
 - Initialization − The 'new' keyword is followed by a call to a constructor.
                   This call initializes the new object.
 
-# Following is an example of creating an object −
+### Following is an example of creating an object −
 ```
 public class Puppy {
    public Puppy(String name) {
